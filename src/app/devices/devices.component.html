@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <mat-card>
+    <table>
+      <caption>
+        <h5>Устройства</h5>
+      </caption>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Наименование</th>
+          <th>Дата</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of devices; track item) {
+        <tr>
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>
+            @if (item.last_active) {
+            {{ item.last_active | date : "dd.MM.YYYY hh:mm" }}
+            } @else {
+            {{ "Нет данных" }}
+            }
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </mat-card>
+  <mat-card class="pagination">
+    <mat-paginator [length]="total" [pageSize]="10" (page)="nextPage($event)" />
+  </mat-card>
+</div>

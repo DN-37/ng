@@ -1,0 +1,25 @@
+mat-card {
+  margin: 15rem auto;
+  padding: 3rem;
+}
+
+h3 {
+  margin: auto;
+  padding-bottom: 3rem;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: var(--second-color);
+  padding: 1rem 0;
+}
