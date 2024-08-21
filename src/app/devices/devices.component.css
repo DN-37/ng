@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45rem;
+}
+
+table {
+  width: 50rem;
+  border-spacing: 2rem;
+}
+
+.pagination {
+  width: 25rem;
+  margin-top: 3rem;
+}

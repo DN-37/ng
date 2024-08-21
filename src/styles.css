@@ -1,0 +1,5 @@
+html {
+  --main-color: #003bdd;
+  --second-color: #dd001d;
+  background-color: var(--main-color);
+}

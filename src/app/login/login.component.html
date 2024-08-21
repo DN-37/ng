@@ -1,0 +1,17 @@
+<mat-card>
+  <h3>Авторизация</h3>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="flex-column">
+      <mat-form-field>
+        <mat-label for="email">Электронная почта: </mat-label>
+        <input matInput type="email" formControlName="email" required />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label for="password">Пароль: </mat-label>
+        <input matInput type="password" formControlName="password" required />
+      </mat-form-field>
+    </div>
+    <p class="error">{{ errorMessage }}</p>
+    <button mat-flat-button type="submit">Войти</button>
+  </form>
+</mat-card>
